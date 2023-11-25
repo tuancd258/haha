@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tớ thích cậu nhiều lắm</title>
+    <style>
+        body {   
+            background-image: url('https://png.pngtree.com/thumb_back/fw800/background/20230616/pngtree-web-banner-a-lovely-heart-loading-bar-in-3d-render-progress-image_3602038.jpg');
+            background-size: 100% 7900%; 
+            background-position: center top; 
+            background-repeat: no-repeat;
+            color: white;
+            text-align: center; 
+            padding: 0px; 
+            
+        }
+        h1{
+            position: absolute; 
+        }
+        button {
+            background-color: red;
+            color: white;
+            padding: 10px;
+            cursor: pointer;
+        }
+    </style>
+   
+    <script>
+        function love ()
+        {
+            var element = document.querySelector('h1'); 
+            element.remove(); 
+            element .className = 'random-box';
+            var randomLeft = Math.floor(Math.random() * (1000 - 0 + 1)) + 0;
+            var randomTop = Math.floor(Math.random() * (500 - 0 + 1)) + 0;
+            element.style.left = randomLeft + 'px';
+            element.style.top = randomTop + 'px';
+            document.body.appendChild(element);
+        }
+    </script>
+</head>
+<body>
+
+    <h1>
+    <div class="confirm-box">
+        <p>Cậu có thích tớ khum?</p>
+        <button type="button">Có</button>
+        <button onclick="love()">Khum</button>
+         </div>
+        </h1>
+</body>
+</html>
